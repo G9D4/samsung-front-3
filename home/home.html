@@ -20,7 +20,7 @@
         <nav class="main-header__nav">
             <ul class="main-header__item-list ">
                 <li>
-                    <a href="/">
+                    <a href="../home/home.html">
                         <div class="main-header_logo">
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
                                 alt="Samsung Logo">
@@ -66,27 +66,28 @@
         <div>
             <ul class="filter-list">
                 <li class="filter-list_item">
-                    <a class="filter-list_item-a" id="mobile">
+                    <button class="filter-list_item-button" id="mobile">
                         Mobile
-                    </a>
+                    </button>
                 </li>
                 <li class="filter-list_item">
-                    <a class="filter-list_item-a" id="tvAudio">
+                    <button class="filter-list_item-button" id="tvAudio">
                         TV & Audio
-                    </a>
+                    </button>
                 </li>
                 <li class="filter-list_item">
-                    <a class="filter-list_item-a" id="electrodomesticos">
+                    <button class="filter-list_item-button" id="electrodomesticos">
                         Electrodomésticos
-                    </a>
+                    </button>
                 </li>
                 <li class="filter-list_item">
-                    <a class="filter-list_item-a" id="tecnologiaAi">
+                    <button class="filter-list_item-button" id="tecnologiaAi">
                         Tecnología AI
-                    </a>
+                    </button>
                 </li>
             </ul>
         </div>
+        <section class="product-items" id="products"></section>
         <section class="selected-products">
             <h2>Novedades</h2>
             <div class="product-items">
@@ -270,5 +271,5 @@
         </div>
     </footer>
 </body>
-<script src="../index.js"></script>
+<script type="module" src="./home.js"></script>
 </html>

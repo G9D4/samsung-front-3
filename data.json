@@ -50,7 +50,9 @@
                 "Cámara principal de 50MP",
                 "Juega en tu mejor nivel con el procesador con más potencia"
             ],
-            "categoria": "Mobile"
+            "categoria": "mobile",
+            "novedades": true,
+            "elegido": false
         },
         {
             "id": 2,
@@ -66,7 +68,9 @@
                 "Productividad sin Límites con la función Multi-tarea",
                 "Experiencia Gaming a otro nivel"
             ],
-            "categoria": "Mobile"
+            "categoria": "mobile",
+            "novedades": false,
+            "elegido": true
         },
         {
             "id": 3,
@@ -82,7 +86,9 @@
                 "Productividad sin Límites con la función Multi-tarea",
                 "Version enterprise"
             ],
-            "categoria": "Mobile"
+            "categoria": "mobile",
+            "novedades": true,
+            "elegido": false
         },
         {
             "id": 4,
@@ -98,7 +104,9 @@
                 "Tecnología Quantum Matrix",
                 "Siente toda la potencia de la IA en 4K"
             ],
-            "categoria": "TV & Audio"
+            "categoria": "tvAudio",
+            "novedades": false,
+            "elegido": true
         },
         {
             "id": 5,
@@ -114,7 +122,9 @@
                 "Mira tu contenido favorito en 4K",
                 "Disfruta de un sistema operativo seguro y fácil de usar"
             ],
-            "categoria": "TV & Audio"
+            "categoria": "tvAudio",
+            "novedades": true,
+            "elegido": false
         },
         {
             "id": 6,
@@ -130,11 +140,13 @@
                 "Digital Inverter- Ahorro de energía & 20 años de garantía en el motor",
                 "Lavado Intenso- Ciclo para eliminar manchas difíciles"
             ],
-            "categoria": "Electrodomésticos"
+            "categoria": "electrodomesticos",
+            "novedades": false,
+            "elegido": true
         },
         {
             "id": 7,
-            "nombre": "Combo Lavadora de carga frontal WF8800A (WF24A8900AV/AP) + Secadora DV8600A (DV24A8870PV/AP)",
+            "nombre": "Combo Lavadora de carga frontal + Secadora",
             "url": [
                 "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/d/v/dv24a8870pvap_wf24a8900avap.png",
                 "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/d/v/dv24a8870pv-ap_006_l-perspective-open_black_2.png"
@@ -146,7 +158,9 @@
                 "Lavado optimizado",
                 "Dispensación automática de jabón y suavizante"
             ],
-            "categoria": "Electrodomésticos"
+            "categoria": "electrodomesticos",
+            "novedades": true,
+            "elegido": false
         },
         {
             "id": 8,
@@ -161,7 +175,9 @@
                 "Mantén alejadas las distracciones y sumérgete en el sonido puro",
                 "Una y otra vez con batería de larga duración"
             ],
-            "categoria": "Tecnología AI"
+            "categoria": "tecnologiaAi",
+            "novedades": false,
+            "elegido": true
         }
     ]
 }
