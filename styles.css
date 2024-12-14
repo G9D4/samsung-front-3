@@ -620,6 +620,14 @@ footer a:hover {
     justify-content: flex-end;
 }
 
+.breadcrumb-link {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .checkout-form {
     width: 600px;
     padding: 32px;
