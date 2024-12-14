@@ -30,8 +30,22 @@ const renderProducts = (event) => {
 };
 
 window.addToCart = (productId) => {
-    console.log(productId);
-    // Agregar codigo para agregar al carrito
+
+    let cart = JSON.parse(localStorage.getItem("cart"));
+
+    if (cart == null) {
+        cart = [];
+    }
+
+    const itemInCart = cart.find(x => x.id === productId);
+
+    if (itemInCart != undefined) {
+        itemInCart.quantity++;
+    } else {
+        cart.push({"id": productId, "quantity": 1})
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    // console.log('carrito nuevo', JSON.parse(localStorage.getItem("cart")))
 }
 
 mobile.addEventListener('click', renderProducts);
