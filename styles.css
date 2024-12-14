@@ -209,7 +209,7 @@ input {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 16px;
+    gap: 12px;
 }
 
 .main-header_logo {
@@ -235,10 +235,23 @@ input {
 }
 
 .main-header__item a {
-    padding: 5px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
     border-radius: 24px;
+}
+
+.main-header__item-category {
+    padding: 4px 12px;
+}
+
+.main-header__item-icon {
+    padding: 8px 12px;
+}
+
+.main-header__item-icon i {
+    font-size: 20px ! important;
 }
 
 .main-header__item a:hover,
@@ -506,10 +519,6 @@ footer a:hover {
     width: 280px;
 }
 
-#form-pedido button {
-    width: 280px;
-}
-
 .content-wrapper {
     display: flex;
     flex-direction: row;
@@ -729,6 +738,14 @@ footer a:hover {
 
     .main-header__item-list {
         gap: 8px;
+    }
+
+    .main-header__item-icon {
+        padding: 8px 8px;
+    }
+    
+    .main-header__item-icon i {
+        font-size: 16px ! important;
     }
 
     .category-menu {
