@@ -1,0 +1,167 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombres": "Juan Alberto",
+            "apellidos": "Perez Torres",
+            "email": "juanperez@gmail.com",
+            "password": "juanperez",
+            "carrito": [
+                {
+                    "idProducto": 1,
+                    "cantidad": 2
+                },
+                {
+                    "idProducto": 8,
+                    "cantidad": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombres": "Beatriz Aurora",
+            "apellidos": "Pinzón Solano",
+            "email": "beatrizpinzon@gmail.com",
+            "password": "beatrizpinzon",
+            "carrito": [
+                {
+                    "idProducto": 3,
+                    "cantidad": 1
+                },
+                {
+                    "idProducto": 6,
+                    "cantidad": 4
+                }
+            ]
+        }
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Galaxy A16 5G 128GB",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a166mz_eb-u2510xuegww.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a166f_galaxy-a16_5g_set-cut-all_01_1.png"
+            ],
+            "precio": 209.00,
+            "descripcion": "Telefono decente, funciona solo enchufado :c",
+            "caracteristicas": [
+                "Pantalla grande de 6,7",
+                "Cámara principal de 50MP",
+                "Juega en tu mejor nivel con el procesador con más potencia"
+            ],
+            "categoria": "Mobile"
+        },
+        {
+            "id": 2,
+            "nombre": "Galaxy Z Fold6 5G 512GB",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/5/7/57f06f72-57cc-4296-9f42-e07bf3203f69.jpg",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/z/f/zfold6-4_1_1_1.jpeg"
+            ],
+            "precio": 2019.00,
+            "descripcion": "Telefono semi decente, funciona con bateria",
+            "caracteristicas": [
+                "Una gran pantalla en la comodidad de tu bolsillo",
+                "Productividad sin Límites con la función Multi-tarea",
+                "Experiencia Gaming a otro nivel"
+            ],
+            "categoria": "Mobile"
+        },
+        {
+            "id": 3,
+            "nombre": "Galaxy Z Fold6 5G 512GB",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-f956bakkl15_ef-of95pcnegww_tagmembers_1.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/0/0/001-onlineexclusive_sm-f956_zfold6_frontopenback_craftedblack_2-garantia_1.png"
+            ],
+            "precio": 2019.00,
+            "descripcion": "Telefono semi decente, funciona magia negra",
+            "caracteristicas": [
+                "Una gran pantalla en la comodidad de tu bolsillo",
+                "Productividad sin Límites con la función Multi-tarea",
+                "Version enterprise"
+            ],
+            "categoria": "Mobile"
+        },
+        {
+            "id": 4,
+            "nombre": "85 Neo QLED 4K QNX1D Smart TV (2024)",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/q/n/qn75qnx1dapxpa_hw-s801bzp700x700_1_2.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/q/n/qn75qnx1dafxza_002_r-perspective1_graphite-black.png"
+            ],
+            "precio": 2299.00,
+            "descripcion": "Televisor nuevecito si que si",
+            "caracteristicas": [
+                "Procesador NQ4 AI Gen2",
+                "Tecnología Quantum Matrix",
+                "Siente toda la potencia de la IA en 4K"
+            ],
+            "categoria": "TV & Audio"
+        },
+        {
+            "id": 5,
+            "nombre": "55” Crystal UHD 4K DU8000",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/u/a/ua65du8000wxxy_000_front1_titan-gray.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/u/a/ua65du8000wxxy_007_r-perspective2_titan-gray-without-logo.png"
+            ],
+            "precio": 439.00,
+            "descripcion": "Televisor semi nuevecito oh no",
+            "caracteristicas": [
+                "Sumérgete en mil millones de matices de color",
+                "Mira tu contenido favorito en 4K",
+                "Disfruta de un sistema operativo seguro y fácil de usar"
+            ],
+            "categoria": "TV & Audio"
+        },
+        {
+            "id": 6,
+            "nombre": "Lavadora Superior WA15CG5441BD con EcoBubble™, 15Kg",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/w/a/wa15cg5441bwzs_001_front_white.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/w/a/wa15cg5441bwzs_005_detail1_white.png"
+            ],
+            "precio": 319.00,
+            "descripcion": "Lavadora cumplidora",
+            "caracteristicas": [
+                "Eco Bubble™- Ahorra agua y energía con burbujas de jabón",
+                "Digital Inverter- Ahorro de energía & 20 años de garantía en el motor",
+                "Lavado Intenso- Ciclo para eliminar manchas difíciles"
+            ],
+            "categoria": "Electrodomésticos"
+        },
+        {
+            "id": 7,
+            "nombre": "Combo Lavadora de carga frontal WF8800A (WF24A8900AV/AP) + Secadora DV8600A (DV24A8870PV/AP)",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/d/v/dv24a8870pvap_wf24a8900avap.png",
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/d/v/dv24a8870pv-ap_006_l-perspective-open_black_2.png"
+            ],
+            "precio": 2248.00,
+            "descripcion": "Combo lavadora y secadora, una ganga",
+            "caracteristicas": [
+                "Una nueva forma de lavar",
+                "Lavado optimizado",
+                "Dispensación automática de jabón y suavizante"
+            ],
+            "categoria": "Electrodomésticos"
+        },
+        {
+            "id": 8,
+            "nombre": "Galaxy Buds FE",
+            "url": [
+                "https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-r400_000_black_white_2_1.png"
+            ],
+            "precio": 99.00,
+            "descripcion": "Audífonos, semi cómodos, fijo pierdes uno en la lavadora",
+            "caracteristicas": [
+                "Comodidad para tus oídos",
+                "Mantén alejadas las distracciones y sumérgete en el sonido puro",
+                "Una y otra vez con batería de larga duración"
+            ],
+            "categoria": "Tecnología AI"
+        }
+    ]
+}
