@@ -641,7 +641,13 @@ footer a:hover {
     padding: 32px;
     display: flex;
     flex-direction: column;
+}
+
+.checkout-detail aside {
+    width: 70%;
     gap: 32px;
+    display: flex;
+    flex-direction: column
 }
 
 .checkout-form_fieldset {
@@ -740,7 +746,7 @@ footer a:hover {
         max-width: 700px;
     }
 
-    /* CARRITO */
+    /* CARRITO TABLET
 
     .content-wrapper {
         flex-direction: column;
@@ -753,6 +759,34 @@ footer a:hover {
     .table-tablet-mobile {
         display: block;
     }
+
+    /* CHECKOUT TABLET */
+
+    .checkout {
+        flex-direction: column-reverse;
+    }
+
+    .checkout-form {
+        width: auto;
+    }
+
+    .checkout-detail {
+        width: auto;
+        align-items: center;
+    }
+
+    .checkout-form {
+        align-self: center;
+        width: 70%;
+    }
+
+    /* .checkout-form_double-field {
+        flex-direction: column;
+    } */
+
+    /* .checkout-form_half-field {
+        width: auto;
+    } */
 }
 
 
@@ -863,6 +897,18 @@ footer a:hover {
     }
 
     .checkout-detail {
+        width: auto;
+    }
+
+    .checkout-form_double-field {
+        flex-direction: column;
+    }
+
+    .checkout-form_half-field {
+        width: auto;
+    }
+
+    .checkout-detail aside {
         width: auto;
     }
 }
