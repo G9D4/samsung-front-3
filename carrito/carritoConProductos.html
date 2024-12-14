@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarritoConProductos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="main-header__carousel">
+            <div class="main-header__slider">
+                <div class="main-header__item-slider">Compara hasta en 36 cuotas a 0% de interés con BAC</div>
+                <div class="main-header__item-slider">Descubre los nuevos Galaxy Fold6 | Z Flip6</div>
+                <div class="main-header__item-slider">Compra ahora con ENVÍO GRATIS entre 24 y 72h</div>
+                <div class="main-header__item-slider">Proyecto grupo 4</div>
+            </div>
+        </div>
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list ">
+                <li>
+                    <a href="/">
+                        <div class="main-header_logo">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
+                                alt="Samsung Logo">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-header__item-list category-menu">
+                <li class="main-header__item ">
+                    <a href="/categoria/mobile">
+                        Mobile
+                    </a>
+                </li>
+                <li class="main-header__item ">
+                    <a href="/categoria/monitores">
+                        Monitores
+                    </a>
+                </li>
+                <li class="main-header__item ">
+                    <a href="/categoria/tv-audio">
+                        TV & Audio
+                    </a>
+                </li>
+                <li class="main-header__item ">
+                    <a href="/categoria/electrodomesticos">
+                        Electrodomésticos
+                    </a>
+                </li>
+                <li class="main-header__item ">
+                    <a href="/categoria/ventas-especiales">
+                        Ventas especiales
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="main-header__item-list ">
+                <li class="main-header__item ">
+                    <a class="login" href="/usuario/login">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+                <li class="main-header__item  carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        <i class="fa fa-cart-arrow-down"></i>
+                    </a>
+                </li>
+                <li class="main-header__item  carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li class="main-header__item ">
+                    <a>
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="main-header__item menu-tablet-mobile">
+                    <a>
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content-carrito">
+        <h1 class="page-title-carrito">Carrito</h1>
+        <section>
+        <div class="content-wrapper">
+            <section class="flex-row">
+                <table class="table-desktop">
+                    <tr>
+                        <th>Articulo</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
+                                alt="GALAXY S24" srcset="">
+                        </td>
+                        <td>Color: Gray</td>
+                        <td>US$ 719.00</td>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 719.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/e/f/ef-gs721c_003_front_gray_thumb.png"
+                                alt="GALAXY S24 STANDING CASE" srcset="">
+                        </td>
+                        <td>GRATIS</td>
+                        <td>US$ 0.00</td>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 0.00</td>
+                    </tr>
+                </table>
+                <table class="table-tablet-mobile">
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
+                                alt="GALAXY S24" srcset="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre del producto</td>
+                        <td>Color: Gray</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 719.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
+                                alt="GALAXY S24" srcset="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre del producto</td>
+                        <td>Color: Gray</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 719.00</td>
+                    </tr>
+                </table>
+                <button class="secondary-btn btn-fit-content">Actualizar Carrito</button>
+            </section>
+            <aside class="cart-detail flex-column">
+                <form id="form-pedido">
+                    <h2>Resumen</h2>
+                    <p>Subtotal: </p>
+                    <p>US$ 719.00</p>
+                    <p>Impuestos: </p>
+                    <p>US$ 50.33</p>
+                    <h3>Total incluyendo impuestos US$ 769.33</h3>
+                    <h3>Total sin incluir impuestos US$ 719.00</h3>
+                    <button class="terciary-btn">Aplicar Código de descuento</button>
+                    <button class="primary-btn" type="submit">Finalizar Pedido</button>
+                </form>
+            </aside>
+        </div>
+
+        </section>
+        <section class="cards-info-shop">
+            <article class="card-info background-color-gray">
+                <i class="fa fa-shield card-info_icon"></i>
+                <h3 class="card-info_title">Tu compra está protegida</h3>
+                <p class="card-info_p">Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni
+                    manipulamos datos sensibles.</p>
+                <a class="card-info_a text-color-dark">Ver información de seguridad y pagos</a>
+            </article>
+            <article class="card-info background-color-gray">
+                <i class="fa fa-truck card-info_icon"></i>
+                <h3 class="card-info_title">Envíos Gratis entre 24 y 72h</h3>
+                <p class="card-info_p">Envíos para productos mobile en el mismo día de procesado el pago, para el resto
+                    del
+                    catálogo entre 24 y 72h.</p>
+                <a class="card-info_a text-color-dark">Ver condiciones y zonas de entregas</a>
+            </article>
+            <article class="card-info background-color-gray">
+                <i class="fa fa-question-circle card-info_icon"></i>
+                <h3 class="card-info_title">¿Tienes dudas?</h3>
+                <p class="card-info_p">
+                    Estamos para ayudarte. Contáctanos por chat, por teléfono o email.
+                    <br>
+                    <br>
+                    L a V de 7:30 a 19:30 | S de 8 a 12
+                </p>
+                <a class="card-info_a text-color-dark">Ver canales de contacto</a>
+            </article>
+        </section>
+        
+
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-links_columnas">
+                <h4 class="text-color-dark">Otras secciones</h4>
+                <a href="/nosotros">Conócenos</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4 class="text-color-dark">¿Necesitas soporte?</h4>
+                <a href="/faqs">Soporte técnico</a>
+                <a href="/condiciones-compra">Condiciones de Compra</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4 class="text-color-dark">Redes sociales</h4>
+                <span class="footer-links_redes">
+                    <a href="https://www.linkedin.com/company/samsunglatin/" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/SamsungLatin" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="https://x.com/SamsungLatin/" target="_blank">
+                        <i class="fa fa-times"></i>
+                    </a>
+                    <a href="https://www.facebook.com/SamsungLatin" target="_blank">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="https://www.instagram.com/SamsungLatin/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 1995-2020 SAMSUNG. Todos los derechos reservados.</p>
+            <div class="footer-copyright_links">
+                <a href="/accesibilidad">Ayuda para accesibilidad</a>
+                <a href="/privacidad">Privacidad</a>
+                <a href="/legal">Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
