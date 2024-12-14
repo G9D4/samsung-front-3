@@ -43,13 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return "";
         },
         correo: (value) => {
-            const regex = /^[A-Za-z0-9_@.\/#$&+-@*]*$/;  // la misma validacion de contraseña que se utilizo en back-end
+            const regex = /^[A-Za-z0-9_@.\/#$&+-@*]*$/;  // Validación de correo
             if (!regex.test(value)) {
                 alert("El correo electrónico no es válido");
                 console.log("Error: El correo electrónico no es válido");
                 return "El correo electrónico no es válido";
             }
-            const correoExiste = data.usuarios && data.usuarios.some(usuario => usuario.correo === value.trim());
+            const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+            const correoExiste = usuarios.some(usuario => usuario.correo === value.trim());
             if (correoExiste) {
                 alert("El correo electrónico ya está registrado");
                 console.log("Error: El correo electrónico ya está registrado");
@@ -101,13 +102,24 @@ document.addEventListener("DOMContentLoaded", function () {
         // Si todas las validaciones pasan
         if (isValid) {
             alert("Formulario validado con éxito");
-            console.log("Nuevo usuario registrado:", {
-                id: Date.now(), // cambiar a un id valido
+
+            // Obtener usuarios
+            const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+            const nuevoUsuario = {
+                id: Date.now(), // Un ID único basado en la fecha y hora por ahora hasta obtener el id de data.json
                 nombres: formValues.nombres,
                 apellidos: formValues.apellidos,
                 telefono: formValues.telefono,
-                correo: formValues.correo
-            });
+                correo: formValues.correo,
+                password: formValues.password
+            };
+            usuarios.push(nuevoUsuario);
+
+            // Guardar usuarios  solucionar
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+            console.log('Nuevo usuario registrado:', nuevoUsuario); 
 
             form.reset(); // Limpiar formulario
         }
