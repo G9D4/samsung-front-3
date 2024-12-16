@@ -1,5 +1,7 @@
 import data from '../data.json' with { type: "json" };
 
+
+
 const mobile = document.getElementById('mobile');
 const tvAudio = document.getElementById('tvAudio');
 const electrodomesticos = document.getElementById('electrodomesticos');
@@ -45,7 +47,7 @@ window.addToCart = (productId) => {
         cart.push({"id": productId, "quantity": 1})
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    // console.log('carrito nuevo', JSON.parse(localStorage.getItem("cart")))
+    console.log('carrito nuevo', JSON.parse(localStorage.getItem("cart")))
 }
 
 mobile.addEventListener('click', renderProducts);
