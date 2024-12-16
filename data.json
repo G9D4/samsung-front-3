@@ -22,7 +22,7 @@
             "nombres": "Beatriz Aurora",
             "apellidos": "Pinzón Solano",
             "email": "beatrizpinzon@gmail.com",
-            "password": "beatrizpinzon123",
+            "password": "beatrizpinzon123*",
             "carrito": [
                 {
                     "idProducto": 3,

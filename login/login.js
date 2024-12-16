@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", async function () {
         email: (value) => {
             const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!regex.test(value)) {
-                displayError("email", "El correo electrónico no es válido.");
-                return "El correo electrónico no es válido.";
+                displayError("email", "El correo electrónico no es válido");
+                return "El correo electrónico no es válido";
             }
             clearError("email");
             return "";
         },
         password: (value) => {
-            const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
             if (!regex.test(value)) {
-                displayError("password", "La contraseña debe tener al menos 8 caracteres, incluir letras y números.");
-                return "La contraseña debe tener al menos 8 caracteres, incluir letras y números.";
+                displayError("password", "La contraseña debe tener al menos 8 caracteres, incluir letras y números");
+                return "La contraseña debe tener al menos 8 caracteres, incluir letras y números";
             }
             clearError("password");
             return "";
@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         let isValid = true;
 
         const emailError = validators.email(formValues.email);
-        const passwordError = validators.password(formValues.password);
 
         if (emailError) {
             isValid = false;
+            // return "";
         }
 
         if (isValid) {
@@ -56,15 +56,18 @@ document.addEventListener("DOMContentLoaded", async function () {
             );
 
             if (!usuario) {
-                displayError("email", "El usuario no existe.");
+                displayError("email", "El usuario no existe");
+                // return '';
                 isValid = false;
             } else {
+                const passwordError = validators.password(formValues.password);
+
                 if (passwordError) {
                     isValid = false;
                 }
 
                 if (isValid && usuario.password !== formValues.password) {
-                    displayError("password", "La contraseña no coincide con el usuario.");
+                    displayError("password", "La contraseña no coincide con el usuario");
                     isValid = false;
                 }
             }
