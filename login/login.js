@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         if (emailError) {
             isValid = false;
-            // return "";
         }
 
         if (isValid) {
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             if (!usuario) {
                 displayError("email", "El usuario no existe");
-                // return '';
                 isValid = false;
             } else {
                 const passwordError = validators.password(formValues.password);
