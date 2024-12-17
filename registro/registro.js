@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const regex = /^[a-zA-ZÀ-ſ\s]+$/;
             if (!value.trim()) {
                 alert("El nombre es obligatorio");
-                console.log("Error: El nombre es obligatorio");
                 return "El nombre es obligatorio";
             }
             if (!regex.test(value)) {
                 alert("El nombre solo debe contener letras y espacios");
-                console.log("Error: El nombre solo debe contener letras y espacios");
                 return "El nombre solo debe contener letras y espacios";
             }
             return "";
@@ -23,12 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const regex = /^[a-zA-ZÀ-ſ\s]+$/;
             if (!value.trim()) {
                 alert("Los apellidos son obligatorios");
-                console.log("Error: Los apellidos son obligatorios");
                 return "Los apellidos son obligatorios";
             }
             if (!regex.test(value)) {
                 alert("Los apellidos solo deben contener letras y espacios");
-                console.log("Error: Los apellidos solo deben contener letras y espacios");
                 return "Los apellidos solo deben contener letras y espacios";
             }
             return "";
@@ -37,32 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
             const regex = /^\d{9}$/;
             if (!regex.test(value)) {
                 alert("El teléfono debe contener exactamente 9 dígitos");
-                console.log("Error: El teléfono debe contener exactamente 9 dígitos");
                 return "El teléfono debe contener exactamente 9 dígitos";
             }
             return "";
         },
         correo: (value) => {
-            const regex = /^[A-Za-z0-9_@.\/#$&+-@*]*$/;  // Validación de correo
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Validación de correo
             if (!regex.test(value)) {
                 alert("El correo electrónico no es válido");
-                console.log("Error: El correo electrónico no es válido");
                 return "El correo electrónico no es válido";
             }
             const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
             const correoExiste = usuarios.some(usuario => usuario.correo === value.trim());
             if (correoExiste) {
                 alert("El correo electrónico ya está registrado");
-                console.log("Error: El correo electrónico ya está registrado");
                 return "El correo electrónico ya está registrado";
             }
             return "";
         },
         password: (value) => {
-            const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
             if (!regex.test(value)) {
                 alert("La contraseña debe tener al menos 8 caracteres, incluir letras y números");
-                console.log("Error: La contraseña debe tener al menos 8 caracteres, incluir letras y números");
                 return "La contraseña debe tener al menos 8 caracteres, incluir letras y números";
             }
             return "";
@@ -70,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
         passwordConfirm: (value, formValues) => {
             if (value !== formValues.password) {
                 alert("Las contraseñas no coinciden");
-                console.log("Error: Las contraseñas no coinciden");
                 return "Las contraseñas no coinciden";
             }
             return "";
