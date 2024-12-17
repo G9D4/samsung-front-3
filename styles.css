@@ -124,6 +124,12 @@ input {
     font-size: 32px !important;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
 /* HEADER PUBLICIDAD */
 
 .main-header__carousel,
