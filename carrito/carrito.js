@@ -27,28 +27,53 @@ const renderCarrito = () => {
         const subtotal = product.precio * item.quantity;
         total += subtotal;
 
+        console.log("Producto guardado" + product);
+
         renderedCarrito += `
-            <article class="cart-item">
-                <div>
-                    <img src=${product.url[0]} alt="${product.nombre}">
-                </div>
-                <div>
-                    <h1>${product.nombre}</h1>
-                    <p>Precio: S/. ${product.precio}</p>
-                    <p>Cantidad: 
-                        <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
-                        ${item.quantity}
-                        <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
-                    </p>
-                    <p>Subtotal: S/. ${subtotal.toFixed(2)}</p>
-                </div>
-                <button class="delete-btn" onclick="removeFromCart(${item.id})">Eliminar</button>
-            </article>
+            <table class="table-desktop">
+                <tr>
+                    <th>Articulo</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src=${product.url[0]} alt="producto 1">
+                    </td>
+                    <td>${product.descripcion}</td>
+                    <td>${product.precio}</td>
+                    <td>
+                        <input type="number" name="cantidad${product.id}" id="cantidad${product.id}" value=${item.quantity}>
+                    </td>
+                    <td>${subtotal}</td>
+                    <td></td>
+
+                </tr>
+            </table>
         `;
+
     });
 
     carritoContainer.innerHTML = renderedCarrito;
-    totalContainer.textContent = `Total: S/. ${total.toFixed(2)}`;
+    totalContainer.innerHTML = `
+          <form id="form-pedido" method="get">
+          <h2>Resumen:</h2>
+          <p>Subtotal: </p>
+          <p>US$ ${25}</p>
+          <p>Impuestos: </p>
+          <p>US$ ${666}</p>
+          <h3>Total incluyendo impuestos US$ ${1043}</h3>
+          <h3>Total sin incluir impuetos US$ ${68464}</h3>
+          <p>Total: S/. ${total.toFixed(2)}</p>
+          </form>
+          <button class="terciary-btn">Aplicar Código de descuento</button>
+          <a href="../checkout/checkouy.html">
+             <button class="primary-btn">Finalizar pedido</button>
+          </a>
+        `;
 };
 
 
