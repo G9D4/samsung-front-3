@@ -5,7 +5,7 @@
             "nombres": "Juan Alberto",
             "apellidos": "Perez Torres",
             "email": "juanperez@gmail.com",
-            "password": "juanperez",
+            "password": "juanperez123",
             "carrito": [
                 {
                     "idProducto": 1,
@@ -22,7 +22,7 @@
             "nombres": "Beatriz Aurora",
             "apellidos": "Pinzón Solano",
             "email": "beatrizpinzon@gmail.com",
-            "password": "beatrizpinzon",
+            "password": "beatrizpinzon123*",
             "carrito": [
                 {
                     "idProducto": 3,
