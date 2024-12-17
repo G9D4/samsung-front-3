@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const validators = {
         nombres: (value) => {
             const regex = /^[a-zA-ZÀ-ſ\s]+$/;
-            if (!value.trim()) {
-                alert("El nombre es obligatorio");
-                return "El nombre es obligatorio";
-            }
+            // if (!value.trim()) {
+            //     alert("El nombre es obligatorio");
+            //     return "El nombre es obligatorio";
+            // }
             if (!regex.test(value)) {
                 alert("El nombre solo debe contener letras y espacios");
                 return "El nombre solo debe contener letras y espacios";
@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         apellidos: (value) => {
             const regex = /^[a-zA-ZÀ-ſ\s]+$/;
-            if (!value.trim()) {
-                alert("Los apellidos son obligatorios");
-                return "Los apellidos son obligatorios";
-            }
+            // if (!value.trim()) {
+            //     alert("Los apellidos son obligatorios");
+            //     return "Los apellidos son obligatorios";
+            // }
             if (!regex.test(value)) {
                 alert("Los apellidos solo deben contener letras y espacios");
                 return "Los apellidos solo deben contener letras y espacios";
