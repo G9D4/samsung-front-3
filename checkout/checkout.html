@@ -97,28 +97,11 @@
         </form>
         <div class="checkout-detail background-color-gray">
             <aside>
-                <section>
-                    <article class="checkout-detail_product">
-                        <div class="checkout-detail_product_image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt="algun-producto">
-                            <span>1</span>
-                        </div>
-                        <p>Algún producto</p>
-                        <p>S/. 40.00</p>
-                    </article>
-                    <article class="checkout-detail_product">
-                        <div class="checkout-detail_product_image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt="algun-producto">
-                            <span>5</span>
-                        </div>
-                        <p>Algún producto</p>
-                        <p>S/. 40.00</p>
-                    </article>
-                </section>
+                <section id="cart-items-section"></section>
                 <section>
                     <div class="checkout-subprice">
                         <p>Subtotal</p>
-                        <p>S/. 40.00</p>
+                        <p id="cart-subtotal"></p>
                     </div>
                     <div class="checkout-subprice">
                         <p>Envío</p>
@@ -128,12 +111,12 @@
                 <section>
                     <div class="checkout-price">
                         <strong>Total</strong>
-                        <strong>S/. 53.00</strong>
+                        <strong id="cart-total"></strong>
                     </div>
                 </section>
             </aside>
         </div>
     </main>
 </body>
-<script src="./checkout.js"></script>
+<script type="module" src="./checkout.js"></script>
 </html>
