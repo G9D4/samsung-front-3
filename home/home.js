@@ -6,7 +6,6 @@ const electrodomesticos = document.getElementById('electrodomesticos');
 const tecnologiaAi = document.getElementById('tecnologiaAi');
 
 const renderProducts = (event) => {
-    
     const category = event.target.id;
     const productsData = data.productos.filter(p => p.categoria === category);
     const productsContainer = document.getElementById('products');
@@ -29,6 +28,57 @@ const renderProducts = (event) => {
     productsContainer.innerHTML = renderedProducts;
 };
 
+const renderNewProducts = (event) => {
+    // Filtrar los productos que son novedades
+    const productsData = data.productos.filter(p => Novedades === true);
+    const productsContainer = document.getElementById('products');
+    let renderedProducts = '';
+
+    productsData.forEach((element) => {
+        renderedProducts +=
+            `<article class="product-item">
+                <div>
+                    <a>
+                        <img src=${element.url[0]} alt="Producto Novedad">
+                    </a>
+                </div>
+                <div>
+                    <h1 class="product__title">${element.nombre}</h1>
+                    <h2 class="product__price">S/. ${element.precio}</h2>
+                </div>
+                <button class="primary-btn" onclick="addToCart(${element.id})">Agregar al carrito</button>
+            </article>`;
+    });
+
+    // Actualizar el contenido del contenedor
+    productsContainer.innerHTML = renderedProducts;
+};
+
+const renderChosenProducts = () => {
+    // Filtrar los productos que son elegidos
+    const productsData = data.productos.filter(p => p.esElegido === true);
+    const productsContainer = document.getElementById('products');
+    let renderedProducts = '';
+
+    productsData.forEach((element) => {
+        renderedProducts +=
+            `<article class="product-item">
+                <div>
+                    <a>
+                        <img src=${element.url[0]} alt="Producto Elegido">
+                    </a>
+                </div>
+                <div>
+                    <h1 class="product__title">${element.nombre}</h1>
+                    <h2 class="product__price">S/. ${element.precio}</h2>
+                </div>
+                <button class="primary-btn" onclick="addToCart(${element.id})">Agregar al carrito</button>
+            </article>`;
+    });
+
+    // Actualizar el contenido del contenedor
+    productsContainer.innerHTML = renderedProducts;
+};
 window.addToCart = (productId) => {
 
     let cart = JSON.parse(localStorage.getItem("cart"));
