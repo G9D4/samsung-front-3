@@ -1,15 +1,23 @@
+import data from '../data.json' with { type: "json" };
+
 let carritoInvitado = JSON.parse(localStorage.getItem("cart"))
 console.log('carritoInvitado',carritoInvitado)
 
-const carritoContainer = document.getElementById('carrito');
-const totalContainer = document.getElementById('total');
+    const carritoContainer = document.getElementById('carrito');
+    let totalContainer = document.getElementById('total');
+
 
 const renderCarrito = () => {
     if (!carritoInvitado || carritoInvitado.length === 0) {
-        carritoContainer.innerHTML = "<p>El carrito está vacío.</p>";
-        totalContainer.textContent = "Total: S/. 0.00";
+        carritoContainer.innerHTML = `
+                                  <p>El carrito está vacío.</p>
+                                  <a href="../home/home.html" class="seguir-comprando">Haz click aquí para continuar comprando.</a>
+                                  `;
+        totalContainer.style.display = 'none'
         return;
     }
+
+    totalContainer.style.display = 'flex'
 
     let total = 0;
     let renderedCarrito = '';

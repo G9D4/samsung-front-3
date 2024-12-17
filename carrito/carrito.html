@@ -53,7 +53,7 @@
         <h1 class="page-title-carrito">Carrito</h1>
         <section>
         <div class="content-wrapper">
-            <section class="flex-row">
+            <section id="carrito" class="flex-row">
                 <table class="table-desktop">
                     <tr>
                         <th>Articulo</th>
@@ -63,39 +63,9 @@
                         <th>Subtotal</th>
                         <th></th>
                     </tr>
+
                     <tr>
-                        <td>
-                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
-                                alt="GALAXY S24" srcset="">
-                        </td>
-                        <td>Color: Gray</td>
-                        <td>US$ 719.00</td>
-                        <td>
-                            <input type="number" name="cantidad" id="cantidad" value="1">
-                        </td>
-                        <td>US$ 719.00</td>
-                        <td>
-                            <a href="">
-                                <i class="fa fa-trash""></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/e/f/ef-gs721c_003_front_gray_thumb.png"
-                                alt="GALAXY S24 STANDING CASE" srcset="">
-                        </td>
-                        <td>GRATIS</td>
-                        <td>US$ 0.00</td>
-                        <td>
-                            <input type="number" name="cantidad" id="cantidad" value="1">
-                        </td>
-                        <td>US$ 0.00</td>
-                        <td>
-                            <a href="">
-                                <i class="fa fa-trash""></i>
-                            </a>
-                        </td>
+
                     </tr>
                 </table>
                 <table class="table-tablet-mobile">
@@ -136,7 +106,7 @@
                 </table>
                 <button class="secondary-btn btn-fit-content">Actualizar Carrito</button>
             </section>
-            <aside class="cart-detail flex-column">
+            <aside id="total" class="cart-detail flex-column">
                 <form id="form-pedido" method="get">
                     <h2>Resumen</h2>
                     <p>Subtotal: </p>
@@ -226,7 +196,7 @@
             </div>
         </div>
     </footer>
-    <script src="carrito.js"></script>
+    <script type="module" src="carrito.js"></script>
 </body>
 
 </html>
