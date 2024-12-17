@@ -52,7 +52,7 @@
             <h1 id="page-title">Registro de cliente</h1>
             <article>
                 <h2>Información personal</h2>
-                <form action="">
+                <form action="#">
                     <fieldset class="datos">
                         <label for="nombres">
                             Nombres
@@ -71,15 +71,9 @@
                             <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="tel" name="telefono" id="telefono" required>
-                    </fieldset>
-                </form>
-            </article>
-        </section>
-        <section class="container">
-            <article>
-                <h2>Información de inicio de sesión</h2>
-                <form action="">
-                    <fieldset class="datos">
+                        <br>
+
+                        <h2>Información de inicio de sesión</h2>
                         <label for="correo">
                             Correo electrónico
                             <span class="asterisk">*</span>
@@ -90,13 +84,15 @@
                             Contraseña
                             <span class="asterisk">*</span>
                         </label>
-                        <input class="inputText" type="password" name="password" id="password" required>
-                        
+                        <!-- <input class="inputText" type="password" name="password" id="password" required> -->
+                        <input class="inputText" type="password" name="password" id="password" required autocomplete="new-password">
+
                         <label for="password_confirm">
                             Confirmar contraseña
                             <span class="asterisk">*</span>
                         </label>
-                        <input class="inputText" type="password" name="password_confirm" id="password_confirm" required>
+                        <!-- <input class="inputText" type="password" name="password_confirm" id="password_confirm" required> -->
+                        <input class="inputText" type="password" name="password_confirm" id="password_confirm" required autocomplete="new-password">
                         <br>
                     </fieldset>
                     <button class="primary-btn btn-responsive" type="submit">Crear Cuenta</button>
@@ -148,4 +144,5 @@
         </div>
     </footer>
 </body>
+<script type="module" src="registro.js"></script>
 </html>
