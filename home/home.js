@@ -1,5 +1,7 @@
 import data from '../data.json' with { type: "json" };
 
+
+
 const mobile = document.getElementById('mobile');
 const tvAudio = document.getElementById('tvAudio');
 const electrodomesticos = document.getElementById('electrodomesticos');
