@@ -692,7 +692,6 @@ footer a:hover {
 .checkout-detail_product {
     display: flex;
     flex-direction: row;
-    gap: 8px;
 }
 
 .checkout-detail_product p:nth-child(2) {
