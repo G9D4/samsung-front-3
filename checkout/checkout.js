@@ -277,7 +277,8 @@ form.addEventListener("submit", function (e) {
     });
 
     if (isValid) {
+        localStorage.removeItem("cart");
         alert("¡Compra registrada exitosamente!");
-        // window.location.href = "../home/home.html";
+        window.location.href = "../home/home.html";
     }
 });
