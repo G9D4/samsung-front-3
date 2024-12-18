@@ -3,7 +3,50 @@ import data from '../data.json' with { type: "json" };
 
 const form = document.getElementById('checkout-form');
 const cartItems = getCartGuest();
-const inputExpirationDate = document.getElementById('fechaExpiracion');
+const inputDni = document.getElementById('dni');
+const inputTelefono = document.getElementById('telefono');
+const inputNumeroTarjeta = document.getElementById('numeroTarjeta');
+const inputFechaExpiracion = document.getElementById('fechaExpiracion');
+const inputCvc = document.getElementById('cvc');
+
+const formatDni = (event) => {
+
+    let value = event.srcElement.value;
+
+    const eKey = 69;
+
+    if (event.keyCode != eKey) {
+        inputDni.value = value.substr(0, 7);
+    } else {
+        event.preventDefault();
+    }
+}
+
+const formatTelefono = (event) => {
+
+    let value = event.srcElement.value;
+
+    const eKey = 69;
+
+    if (event.keyCode != eKey) {
+        inputTelefono.value = value.substr(0, 8);
+    } else {
+        event.preventDefault();
+    }
+}
+
+const formatNumeroTarjeta = (event) => {
+
+    let value = event.srcElement.value;
+
+    const eKey = 69;
+
+    if (event.keyCode != eKey) {
+        inputNumeroTarjeta.value = value.substr(0, 18);
+    } else {
+        event.preventDefault();
+    }
+}
 
 const formatExpirationDate = (event) => {
 
@@ -18,8 +61,21 @@ const formatExpirationDate = (event) => {
             if (value.includes('/')) {
                 value = value.replace('/', "");
             }
-            inputExpirationDate.value = value.substr(0, 2) + "/" + value.substr(2);
+            inputFechaExpiracion.value = value.substr(0, 2) + "/" + value.substr(2);
         }
+    } else {
+        event.preventDefault();
+    }
+}
+
+const formatCvc = (event) => {
+
+    let value = event.srcElement.value;
+
+    const eKey = 69;
+
+    if (event.keyCode != eKey) {
+        inputCvc.value = value.toString().substr(0, 3);
     } else {
         event.preventDefault();
     }
@@ -188,7 +244,11 @@ const validators = {
 };
 
 renderItemsSection();
-inputExpirationDate.addEventListener('keydown', formatExpirationDate)
+inputDni.addEventListener('keydown', formatDni);
+inputTelefono.addEventListener('keydown', formatTelefono);
+inputNumeroTarjeta.addEventListener('keydown', formatNumeroTarjeta);
+inputFechaExpiracion.addEventListener('keydown', formatExpirationDate);
+inputCvc.addEventListener('keydown', formatCvc);
 
 form.addEventListener("submit", function (e) {
     
@@ -217,8 +277,7 @@ form.addEventListener("submit", function (e) {
     });
 
     if (isValid) {
-        alert("MODAL DE COMPRA REGISTRADA O EXITOSAAAAAAA");
+        alert("¡Compra registrada exitosamente!");
         // window.location.href = "../home/home.html";
     }
 });
-
