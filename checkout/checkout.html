@@ -23,14 +23,14 @@
         </nav>
     </header>
     <main class="checkout">
-        <form class="checkout-form">
+        <form class="checkout-form" id="checkout-form">
             <a href="../carrito/carrito.html" class="breadcrumb-link">
                 <i class="fa fa-arrow-left"></i>
                 Regresar al Carrito
             </a>
             <fieldset class="checkout-form_fieldset">
                 <h2 class="checkout-form_title text-color-dark">Contacto</h2>
-                <input type="email" id="contacto" placeholder="Correo electrónico" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
                 <div>
                     <input type="checkbox" id="publicidad">
                     <label for="publicidad">Enviarme novedades y ofertas por correo electrónico</label>
@@ -74,21 +74,21 @@
             <fieldset class="checkout-form_fieldset">
                 <h2 class="checkout-form_title text-color-dark">Pago</h2>
                 <div class="checkout-form_field">
-                    <label for="numero-tarjeta">Número de la tarjeta</label>
-                    <input type="number" id="numero-tarjeta" required>
+                    <label for="numeroTarjeta">Número de la tarjeta</label>
+                    <input type="number" id="numeroTarjeta" required>
                 </div>
                 <div class="checkout-form_field">
-                    <label for="nombre-titular">Nombre del titular</label>
-                    <input type="text" id="nombre-titular" required>
+                    <label for="nombreTitular">Nombre del titular</label>
+                    <input type="text" id="nombreTitular" required>
                 </div>
                 <div class="checkout-form_double-field">
                     <div class="checkout-form_half-field">
-                        <label for="fecha-expiracion">Fecha de expiración</label>
-                        <input type="number" id="fecha-expiracion" required>
+                        <label for="fechaExpiracion">Fecha de expiración</label>
+                        <input type="text" maxlength="5" id="fechaExpiracion" required>
                     </div>
                     <div class="checkout-form_half-field">
-                        <label for="fecha-expiracion">CVC</label>
-                        <input type="number" id="fecha-expiracion" required>
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" maxlength="4" required>
                     </div>
                 </div>
  

@@ -5,7 +5,7 @@
             "nombres": "Juan Alberto",
             "apellidos": "Perez Torres",
             "email": "juanperez@gmail.com",
-            "password": "juanperez123",
+            "password": "juanperez123*",
             "carrito": [
                 {
                     "idProducto": 1,

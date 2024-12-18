@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const input = form[field];
         let errorElement = input.nextElementSibling;
         if (!errorElement || !errorElement.classList.contains("error-message")) {
-            errorElement = document.createElement("div");
+            errorElement = document.createElement("span");
             errorElement.classList.add("error-message");
             input.after(errorElement);
         }
