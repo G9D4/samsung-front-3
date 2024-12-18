@@ -28,10 +28,10 @@ const renderProducts = (event) => {
     productsContainer.innerHTML = renderedProducts;
 };
 
-const renderNewProducts = (event) => {
+const renderNewProducts = () => {
     // Filtrar los productos que son novedades
-    const productsData = data.productos.filter(p => Novedades === true);
-    const productsContainer = document.getElementById('products');
+    const productsData = data.productos.filter(p => p.novedades === true);
+    const productsContainer = document.getElementById('novelty-products');
     let renderedProducts = '';
 
     productsData.forEach((element) => {
@@ -56,8 +56,8 @@ const renderNewProducts = (event) => {
 
 const renderChosenProducts = () => {
     // Filtrar los productos que son elegidos
-    const productsData = data.productos.filter(p => p.esElegido === true);
-    const productsContainer = document.getElementById('products');
+    const productsData = data.productos.filter(p => p.elegido === true);
+    const productsContainer = document.getElementById('picked-products');
     let renderedProducts = '';
 
     productsData.forEach((element) => {
@@ -104,6 +104,5 @@ electrodomesticos.addEventListener('click', renderProducts);
 tecnologiaAi.addEventListener('click', renderProducts);
 
 mobile.click(); //Permite que al cargar la pagina por primera vez aparezcan los productos de mobile
-
-// Funcion para render de novedades, buscar entre los productos cuales tienen la propiedad "novedades" en true
-// Funcion para render de mas elegidos, buscar entre los productos cuales tienen la propiedad "elegidos" en true
+renderNewProducts();
+renderChosenProducts();
